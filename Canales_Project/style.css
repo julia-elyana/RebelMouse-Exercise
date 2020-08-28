@@ -1,0 +1,610 @@
+* {
+    box-sizing: border-box;
+}
+.mobilenav{
+    display: none;
+}
+body {
+    background-color: #F5F6FA;
+    color: black;
+    font-size: 13px;
+}
+
+div {
+    position: relative;
+}
+/* The following code is styling the header of the website */
+.header {
+    background-color: #143A7C;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 125px;
+    width:100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+}
+.site_header{
+    background: #143a7c;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.top_header{
+    position: relative;
+    display: block;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 60px;
+    padding-top:10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 105px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    z-index: 1;
+}
+/* This is the styling for the navigation bar */
+.top_nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 60px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size:14px;
+    font-family: Montserrat,Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.nav:hover{
+    color: #bfcc2d;
+}
+/* This is right of the navigation bar */
+
+.fale_conosco{
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size:14px;
+    font-family: Montserrat,Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+.entrar{
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size:14px;
+    font-family: Montserrat,Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#profile_icon{
+    display:block;
+    height:30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* This is the code to style the buttons above the search bar */
+.bottom_header {
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: block;
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.top_bottom_header {
+    display: block;
+    align-items: center;
+    max-width: 1280px;
+    height: 60px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+    margin-bottom: 16px;
+    padding-top: 20px;
+    padding-bottom: .3em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    background-color: transparent;
+    color: #fff;
+    font-size:14px;
+    font-family: Montserrat,Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+    z-index: 1;
+}
+button:hover {
+    border-bottom-color: #bfcc2d;
+    color: #bfcc2d;
+}
+
+/* This code is styling for the search bar */
+.search_div {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+ 
+}
+form {
+    display: flex;
+    width:100%;
+    height: 40px;
+}
+#search{
+    display: flex;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 25px;
+    z-index: 1;
+}
+.search_text{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    position: relative;
+    box-sizing: border-box;
+    text-indent: 30px;
+  
+}
+.search_button {
+    cursor: pointer;
+    max-width: 185px;
+    background: #e6207e;
+    color: #fff;
+    padding-left:50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    z-index: 1;
+}
+.promotional_bar{
+    background-color: #5C975E;
+    position: absolute;
+    top: 151px;
+    height: 30px;
+    width: 100%;
+    z-index: 1;
+
+}
+#promo_icon{
+    position: relative;
+    height: 25px;
+    display: inline-block;
+    padding-right: 4px;
+
+}
+.promo_bar_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    place-content: center;
+    color: #fff;
+    font-size:16px;
+    font-family: Montserrat,Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.promo_link{
+    cursor: pointer;
+    color: #DCEB68;
+    font-weight: 600;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+/* This is the code for all of the elements below the header */
+.body_content{
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* This is right side of the body content */
+.container{
+    margin-top: 60px;
+    margin-right: auto;
+    padding: 40px 30px 15px 40px;
+    width: 50%;
+    max-width: 640px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+h2{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Gotham, Helvetica Neue, Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+.title_container{
+    display: block;
+    width: 100%;
+    font-family: Gotham, Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    padding-top: 110px;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+.brand{
+    float: right;
+    padding-top: 80px;
+    z-index: 1;
+}
+.package_title{
+    color: #333;
+    font-size: 14px;
+    font-family: Montserrat, Helvetica Neue, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.description{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Gotham, Helvetica Neue, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.offer_container{
+    width: 100%;
+    display: block;
+    float: left !important;
+    font-family: Gotham, Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    color: #656565;
+    font-size: 14px;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+.icons{
+    height: 35px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.call_information{
+    display: block;
+}
+.box_top_ammenities{
+    border-top: 1px solid #9e9e9e;
+    border-bottom: 1px solid #9e9e9e;
+    color: #333641;
+    height: 70px;
+    margin-top: 4vh;
+    margin-right: 0px;
+    margin-bottom: 4vh;
+    margin-left: 0px;
+    padding: 10px 5px; 
+}
+.container_icon{
+    align-items: center;
+    display: inline-block;
+    height: 50px;
+    justify-items: center;
+}
+.attribute{
+    display: relative;
+}
+
+.bottom_box{
+    display: inline-block;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.box_date{
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+    color: #333641;
+    display: inline-block;
+    position: absolute;
+    padding: 15px;
+    width: 260px;
+    
+}
+.open_date{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.know_more{
+    cursor: pointer;
+    float: right;
+    color: #e6207e;
+    font-size: .7142857143em;
+    font-weight: 600;
+    display:inline-block;
+}
+.day{
+    font-size: 2.5714285714em;
+}
+.formated_date{
+    font-size: .9285714286em;
+    font-weight: 300;
+    display: inline-block;
+    width: 40px;
+}
+.price_container{
+    height: 150px;
+    display: block;
+    float: right;
+    padding-right: 50px;
+}
+.orange_box{
+    background-color: #FF6D00;
+    width: 54px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: Gotham, Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: .6px;
+    text-align: center;
+    line-height: 30px;
+}
+.promotion{
+    color: inherit;
+    margin-top: 30px;
+    display: block;
+    
+}
+.offer{
+    margin-right: 20px;
+    display: block;
+}
+.orange{
+    color: #FF6D00
+}
+.price {
+    color: #FF6D00;
+    font-size: 2.1428571429em;
+    font-weight: 600;
+    margin-right: 5px;
+    padding-bottom: 0px;
+}
+.small_print{
+    display: inline-block;
+    font-size: .7857142857em;
+    text-align: left;
+    width: auto;
+    padding-bottom: 0px;
+}
+.green_font{
+    color: #4caf50;
+    font-size: 10px;
+    display: inline-block;
+}
+
+.check{
+    height: 15px;
+}
+/* This is the code I used to style the gallery */
+.gallery {
+    position: relative;
+    margin-top: 172px;
+    width: 50%;
+    height: 800px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+  }
+  
+/* Hide the images by default */
+.mySlides {
+   display: none;
+  }
+
+.cursor {
+    cursor: pointer;
+  }
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+    
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.column {
+    float: left;
+    width: 16.66%;
+  }
+  
+.demo {
+    opacity: 0.6;
+  }
+  
+.active,
+.demo:hover {
+    opacity: 1;
+  }
+
+/* Code here styles responsiveness to multiple screen widths */
+ @media screen and (max-height: 1185px) and (max-width: 1280px){
+    .promo_bar_text{
+        font-size: 12px;
+    }
+
+ @media screen and (max-height: 1185px) and (max-width: 930px){
+ 
+    .header{
+        display: none;
+    }
+    .mobilenav {
+        display: block;
+        overflow: hidden;
+        background-color: #143A7C;
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    .mobile_logo {
+        max-width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%
+    }
+    .fa {
+        transform: scale(2,2);
+        color: #fff;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .mobilenav #myLinks {
+        display: none;
+    }
+    #mobile_search{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 8px;
+        padding-right: 30px;
+        
+    }
+    .promotional_bar{
+        display: none;
+    }
+    /* Style navigation menu links */
+    .mobilenav a {
+        color: white;
+        padding: 14px 36px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .nav{
+        padding-top:0px;
+        padding-bottom: 15px;
+    }
+    /* Style the hamburger menu */
+    .mobilenav a.icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .gallery{
+        max-width: 930px;
+        width: 100%;
+        margin-top: 0px;
+        margin-right: 10px;
+        max-height: 300px;
+    }
+    .box_top_ammenities{
+        height: 85px;
+    }
+    .container{
+        max-width: 930px;
+        width:100%;
+        margin-left: 2%;
+        margin-top: 30%;
+        padding-top: 30%;
+       
+    }
+    .title_container{
+        padding-top: 5px;
+    }
+    .container_icon{
+        position: relative;
+    }
+    .box_date{
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-height: 1185px) and (max-width: 480px){
+     .container{
+        margin-top: 15%;
+        padding-top: 15%;
+        }
+    .box_top_ammenities{
+        height: 175px;
+        }
